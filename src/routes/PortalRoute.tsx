@@ -5,7 +5,7 @@ const searchResults = lazy(() => import('../components/organisms/searchResults/S
 const routePortals = {
     HOME: 'dashboard',
     PROFILE: 'profile',
-    SEARCHRESULTS: "searchResults",
+    SEARCHRESULTS: "searchResultsssss",
 
 }
 export const routePortal = [
