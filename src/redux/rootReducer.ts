@@ -1,13 +1,17 @@
 import { combineReducers } from 'redux'
-// để tạm 
+import { createSlice } from "@reduxjs/toolkit";
+
 const initState = {
     state: 0
 }
+
 const reducer = (state = initState, action: any) => {
 
-    if (action.type === "cc") {
-        return state
-    }
+
+    return state
+
 }
 
-export const rootReducer = combineReducers(reducer)
+export const rootReducer = combineReducers({
+    reducer
+})

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './style.css'
 import {
   Navigate,
@@ -17,36 +17,40 @@ import SearchResults from '../components/organisms/searchResults/SearchResults';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+    <Suspense fallback={<></>} >
+      <div className="App">
 
-        <Route
-          path='/'
-          element={
-            <LayoutPage>
-              <Outlet />
-            </LayoutPage>
-          }
-        >
-          <Route path='/'>
-            {
-              routePortal.map(route => (
-                <Route
-                  key={route.id}
-                  path={route.route}
-                  element={<route.component />}
-                >
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
 
-                </Route>
-              ))
+          <Route
+            path='/'
+            element={
+              <LayoutPage>
+                <Outlet />
+              </LayoutPage>
             }
-          </Route>
+          >
+            <Route path='/'>
+              {
+                routePortal.map(route => (
+                  <Route
+                    key={route.id}
+                    path={route.route}
+                    element={<route.component />}
+                  >
 
-        </Route>
-      </Routes >
-    </div >
+                  </Route>
+                ))
+              }
+            </Route>
+
+          </Route>
+        </Routes >
+
+      </div >
+    </Suspense>
   );
 }
 

@@ -1,9 +1,9 @@
-import { lazy } from 'react'
-const Home = lazy(() => import('../components/organisms/home/Home'))
-const profile = lazy(() => import('../components/organisms/Profile/Profile'))
-const searchResults = lazy(() => import('../components/organisms/searchResults/SearchResults'))
+import React, { lazy } from 'react'
+const Home = React.lazy(() => import('../components/organisms/home/Home'))
+const profile = React.lazy(() => import('../components/organisms/Profile/Profile'))
+const searchResults = React.lazy(() => import('../components/organisms/searchResults/SearchResults'))
 const routePortals = {
-    HOME: 'dashboard',
+    HOME: '/',
     PROFILE: 'profile',
     SEARCHRESULTS: "searchResults",
 
