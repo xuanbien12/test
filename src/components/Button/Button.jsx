@@ -6,4 +6,4 @@ const Button = ({ chilldren, props }) => {
         <button onClick={onClick} type={type} >{chilldren}</button>
     )
 }
-export default <But></But>
+export default Button
