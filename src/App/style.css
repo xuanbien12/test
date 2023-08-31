@@ -2,12 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Basic";
+    src: url(./../assets/fonts/Segoe-ui-historic\ \(1\).ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(./../assets/fonts/Segoe\ UI\ Semibold.ttf)
+}
+
+@font-face {
+    font-family: "italic";
+    src: url(./../assets/fonts/Segoe\ ui\ semilight\ italic.ttf)
+}
+
+@font-face {
+    font-family: "semilight";
+    src: url(./../assets/fonts/Segoe\ ui\ semilight.ttf)
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+html {
+    font-family: "semilight";
 }
 
 h1,
@@ -25,4 +50,56 @@ td,
 ul,
 ol {
     list-style: none;
+}
+
+
+
+button {
+    display: inline-block;
+}
+
+.short-gr:hover .short-gr-show {
+    display: inline-block
+}
+
+.nav-home::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-home:hover::-webkit-scrollbar {
+    display: initial;
+}
+
+.nav-home:hover::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.nav-home:hover::-webkit-scrollbar {
+    width: 7px;
+}
+
+.nav-home:hover::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+}
+
+.info-friend-home::-webkit-scrollbar {
+    display: none;
+}
+
+.info-friend-home::-webkit-scrollbar {
+    display: initial;
+}
+
+.info-friend-home::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.info-friend-home::-webkit-scrollbar {
+    width: 7px;
+}
+
+.info-friend-home::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
 }
