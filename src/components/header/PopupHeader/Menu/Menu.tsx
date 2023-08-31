@@ -7,7 +7,7 @@ const Menu = () => {
         <section className=" absolute bg-[#f7f8fa] w-[608px] top-[-4px] right-[-155px] max-h-[100vh] 
          rounded-[10px] shadow-2xl">
             <header className="w-[95%] m-auto sticky py-[16px]">
-                <span className="text-[25px] font-black">Menu</span>
+                <span className="text-[25px] font-bold">Menu</span>
             </header>
             <div className="flex px-[16px] pb-[16px]">
                 <div className="bg-[#ffffff] w-[360px] py-[16px] rounded-[10px] mr-[16px] shadow-xl max-h-[75vh] overflow-y-auto">
@@ -34,11 +34,11 @@ const Menu = () => {
                         <input className="w-[100%] rounded-[20px] h-[40px] pl-[35px] bg-[#f0f2f5] focus:outline-none" type="text"
                         placeholder="Tìm kiếm trong Menu" />
                     </div>
-                    <h2 className="w-[95%] text-[16px] font-black m-auto pb-[8px]">Chuyên nghiệp</h2>
+                    <h2 className="w-[95%] text-[16px] font-bold m-auto pb-[8px]">Chuyên nghiệp</h2>
                     <MenuLeft/>
                 </div>
                 <div className="w-[200px] bg-[#ffffff] rounded-[10px] max-h-[546px] shadow-xl">
-                    <h2 className="text-[20px] py-[16px] px-[12px] font-black">Tạo</h2>
+                    <h2 className="text-[20px] py-[16px] px-[12px] font-bold">Tạo</h2>
                     <MenuRight/>
                 </div>
             </div>
