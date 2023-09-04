@@ -14,8 +14,15 @@ export type PropsLayout = {children: React.ReactNode;};
 const Header = ({children}: any) => {
 const antIcon = < LoadingOutlined style={ { fontSize: 100 } } spin /> ;
 
-const [activePage , setActivePage ]=useState("Home")
-
+const [activePage , setActivePage ]=useState("")
+const handleActiveIcon=(name:string)=> {
+    if(activePage === name){
+        setActivePage("")
+    }else {
+        setActivePage(name)
+    }
+    
+}
 return (
 <div className='sticky'>
     <header className="bg-[#ffffff] flex justify-between h-[56px] items-center w-[100%] m-[auto] shadow-lg">
@@ -199,7 +206,7 @@ return (
                 <Space>
                     <Popover content={ <Menu />} trigger="click">
                         <li className='flex w-[40px] h-[40px] rounded-[50%] justify-center items-center mx-[5px] cursor-pointer relative bg-[#e4e6eb] hover:bg-[#d8dadf]'
-                        title="Menu" onClick={()=>setActivePage("Menu")}>
+                        title="Menu" onClick={()=>handleActiveIcon("Menu")}>
                             <Link to="/">
                             {
                             activePage === "Menu"
@@ -235,8 +242,8 @@ return (
                     </Popover>
                 </Space>
                 <Space>
-                    <Popover content={<Messenger />} trigger="click">
-                        <li onClick={()=>setActivePage("Mess")}
+                    <Popover  content={<Messenger />} trigger="click">
+                        <li onClick={()=>handleActiveIcon("Mess")}
                         className='bg-[#e4e6eb] flex justify-center items-center w-[40px] h-[40px] rounded-[50%] relative mx-[5px] cursor-pointer hover:bg-[#d8dadf]'>
                             <Link to="/">
                                 {
@@ -264,7 +271,7 @@ return (
                 </Space>
                 <Space>
                     <Popover content={<Notification />} trigger="click">
-                        <li onClick={() => {setActivePage("Notifi")}}
+                        <li  onClick={()=>handleActiveIcon("Notifi")}
                             className='bg-[#e4e6eb] hover:bg-[#d8dadf] flex justify-center items-center w-[40px] h-[40px] rounded-[50%] mx-[5px] cursor-pointer'>
                                 <Link to="/">
                                     {
@@ -285,12 +292,11 @@ return (
                                         </svg>
                                     }
                                 </Link>
-                           
                         </li>
                     </Popover>
                 </Space>
                 <Space>
-                    <Popover content={<Acc/>} trigger="click">
+                    <Popover content={<Acc/>} trigger="click" >
                         <li className='w-[50px] mx-[5px] cursor-pointer'>
                             <div className='w-[40px]'>
                                 <img className='w-[40px] rounded-[50%]'

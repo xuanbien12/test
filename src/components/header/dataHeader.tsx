@@ -198,10 +198,21 @@ export const dataAcc = [
         icon2:`fa-solid fa-chevron-right`
     },
     {
+        id:uuid(),
+        icon:`fa-solid fa-moon`,
+        title:"Màn hình và trợ năng",
+        icon2:`fa-solid fa-chevron-right`
+    },
+    {
         id: uuid(),
         icon:`fa-solid fa-circle-exclamation`,
         title: "Đóng góp ý kiến"
-    }
+    },
+    {
+        id:uuid(),
+        icon:`fa-solid fa-right-from-bracket`,
+        title:"Đăng xuất"
+    },
 ];
 
 export const dataNotifi = [
@@ -219,6 +230,126 @@ export const dataMess = [
         title: "Xôi Xéo",
         icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
         text: "Bạn: Hihihi...",
-        time: "30p trước"
-    }
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
+    {
+        id: uuid(),
+        img: "https://scontent.xx.fbcdn.net/v/t39.30808-1/368472185_1513747129363944_3603525927141935454_n.jpg?stp=dst-jpg_p100x100&_nc_cat=102&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=x8ygplZ6TRkAX8678Kp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBdpXBThfUB59PEMsb1nrJ0ilP5K4roy8kTelYe_05ZGA&oe=64F5B1BF",
+        title: "Xôi Xéo",
+        icon:"https://static.xx.fbcdn.net/images/emoji.php/v9/t6f/1.5/16/1fa74.png",
+        text: "Bạn: Hihihi...",
+        time: "30 phút"
+    },
 ]

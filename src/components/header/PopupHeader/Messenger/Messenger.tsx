@@ -9,7 +9,7 @@ import ChildMess from "./Components/ChildMess";
 
 const Messenger = () => {
     return(
-        <section className="absolute w-[360px] max-h-[632px] border-solid bg-[#ffffff] top-[-4px] right-[-105px] rounded-[15px]  shadow-2xl">
+        <section className="absolute w-[360px] border-solid bg-[#ffffff] top-[-4px] right-[-105px] rounded-[15px] max-h-[90vh] overflow-y-auto shadow-2xl">
             <header className="flex justify-around items-center mb-[10px]">
                 <div className="ml-[-55px]">
                     <p>
@@ -41,9 +41,11 @@ const Messenger = () => {
                 <button className="border-2 border-solid rounded-[10px] w-[65px] mr-[12px] hover:bg-[#f2f2f2] focus:text-[#257ef3] focus:bg-[#e7f3ff] font-semibold">Hộp thư</button>
                 <button className="border-2 border-solid rounded-[10px] w-[80px] hover:bg-[#f2f2f2] focus:text-[#257ef3] focus:bg-[#e7f3ff] font-semibold">Cộng đồng</button>
             </div>
-            <ChildMess/>
-            <div className="py-[10px] border-solid border-gray-200 cursor-pointer">
-                <p className="w-fit m-auto">
+            <div className="">
+                <ChildMess/>
+            </div>
+            <div className="py-[10px]">
+                <p className="w-fit m-auto text-[#216fdb]">
                     Xem tất cả trong Messenger
                 </p>
             </div>

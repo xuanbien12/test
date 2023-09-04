@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from '../../header/Header'
 
 const Profile = () => {
     return (
-        <div>
-            profile
-        </div>
+        <section>
+            <h1>hihihih</h1>
+        </section>
     )
 }
 export default Profile
