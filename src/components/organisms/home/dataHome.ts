@@ -2,7 +2,7 @@ import { v4 as uuid } from '@lukeed/uuid';
 export const dataNavbarHome = [
     {
         id: uuid(),
-        name: "bạn bè",
+        name: "Bạn bè",
         link: "",
         position: "0 -296px"
     },
