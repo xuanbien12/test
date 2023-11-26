@@ -8,17 +8,15 @@ import {
 import { Spin, ConfigProvider } from 'antd';
 import { routePortal } from '../routes/PortalRoute';
 import LayoutPage from '../components/layout/LayoutPage';
-import background from "./../assets/img/bg.png"
-import ForgotPassword from '../components/organisms/ForgotPassword/ForgotPassword';
 
-const Login = React.lazy(() => import('../components/organisms/login/Login'))
+const Login = React.lazy(() => import('../components/organisms/Auth/login/Login'))
 
 
 
 function App() {
 
   return (
-    <div style={{ backgroundImage: `url(${background})` }} className="App bg-[#f0f2f5] min-h-[100vh]  ">
+    <div className="App bg-[#f0f2f5] min-h-[100vh]  ">
       <Suspense fallback={<Spin className='w-full h-[80vh] flex items-center justify-center ' size="large" />} >
         <ConfigProvider
           theme={{
@@ -33,7 +31,6 @@ function App() {
           <Routes>
 
             <Route path='/login' element={<Login />} />
-            <Route path='/forgot-password' element={<Login />} />
             <Route path='/' element={<LayoutPage>
               <Outlet />
             </LayoutPage>

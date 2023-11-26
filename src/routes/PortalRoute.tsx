@@ -1,39 +1,17 @@
 import React, { lazy } from 'react'
-const DeviceManage = React.lazy(() => import('../components/organisms/pages/DeviceManage'))
-const UserManage = React.lazy(() => import('../components/organisms/pages/UserManage'))
-const LogDevice = React.lazy(() => import('../components/organisms/pages/LogDevice'))
-const SettingDevice = React.lazy(() => import('../components/organisms/pages/SettingDevice'))
+const HomePage = React.lazy(() => import('../components/organisms/pages/Home'))
+
 export const routePortals = {
-    DEVICEMANAGE: '/',
-    USERMANAGE: "/user-manage",
-    LOGDEVICE: "/log-device",
-    SETTINGDEVICE: "/setting-device"
+    HOME: '/',
+
 
 
 }
 export const routePortal = [
     {
         id: 1,
-        route: routePortals.DEVICEMANAGE,
-        component: DeviceManage,
+        route: routePortals.HOME,
+        component: HomePage,
         permission: 'dashboard'
-    },
-    {
-        id: 2,
-        route: routePortals.USERMANAGE,
-        component: UserManage,
-        permission: 'dashboard'
-    },
-    {
-        id: 3,
-        route: routePortals.LOGDEVICE,
-        component: LogDevice,
-        permission: 'dashboard'
-    },
-    {
-        id: 4,
-        route: routePortals.SETTINGDEVICE,
-        component: SettingDevice,
-        permission: 'dashboard'
-    },
+    }
 ]

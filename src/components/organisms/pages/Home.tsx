@@ -1,10 +1,10 @@
 import React from "react";
 
-const LogDevice = () => {
+const Home = () => {
     return (
         <div>
-            LogDevice
+            Home
         </div>
     )
 }
-export default LogDevice
+export default Home
