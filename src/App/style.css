@@ -2,104 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "Basic";
-    src: url(./../assets/fonts/Segoe-ui-historic\ \(1\).ttf);
+.ant-modal .ant-modal-content {
+    background-color: #E1F1E4;
 }
 
-@font-face {
-    font-family: "Semibold";
-    src: url(./../assets/fonts/Segoe\ UI\ Semibold.ttf)
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    border-color: #fff
 }
 
-@font-face {
-    font-family: "italic";
-    src: url(./../assets/fonts/Segoe\ ui\ semilight\ italic.ttf)
+.Change_Password .ant-input-affix-wrapper {
+    border-color: #000;
+    padding: 10px;
 }
 
-@font-face {
-    font-family: "semilight";
-    src: url(./../assets/fonts/Segoe\ ui\ semilight.ttf)
+.ant-popover .ant-popover-inner {
+    padding: 0;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-
-
+    font-size: 16px;
 }
 
-html {
-    font-family: "semilight";
+.ant-btn {
+    padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
 }
 
-tr,
-td,
-ul,
-ol {
-    list-style: none;
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
-
-
-button {
-    display: inline-block;
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>th,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>td,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>td {
+    border-inline-end: 1px solid #000;
 }
 
-.short-gr:hover .short-gr-show {
-    display: inline-block
+.ant-table-wrapper .ant-table-thead>tr>th,
+.ant-table-wrapper .ant-table-thead>tr>td {
+    border-bottom: 1px solid #000;
 }
 
-.nav-home::-webkit-scrollbar {
-    display: none;
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container {
+    border-inline-start: 1px solid #f0f0f0;
+    border-top: 1px solid #000;
 }
 
-.nav-home:hover::-webkit-scrollbar {
-    display: initial;
+.ant-table-wrapper .ant-table-tbody>tr>th,
+.ant-table-wrapper .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #000;
 }
 
-.nav-home:hover::-webkit-scrollbar-thumb {
-    background: #ccc;
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+.ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>.ant-table-cell-fix-right-first::after {
+    border-inline-end: 1px solid #000;
 }
 
-.nav-home:hover::-webkit-scrollbar {
-    width: 7px;
+:where(.css-dev-only-do-not-override-1op8cm1).ant-modal-confirm .ant-modal-confirm-btns {
+    text-align: center;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px;
 }
 
-.nav-home:hover::-webkit-scrollbar-thumb {
-
-    border-radius: 10px;
-}
-
-.info-friend-home::-webkit-scrollbar {
-    display: none;
-}
-
-.info-friend-home::-webkit-scrollbar {
-    display: initial;
-}
-
-.info-friend-home::-webkit-scrollbar-thumb {
-    background: #ccc;
-}
-
-.info-friend-home::-webkit-scrollbar {
-    width: 7px;
-}
-
-.info-friend-home::-webkit-scrollbar-thumb {
-
-    border-radius: 10px;
+.ant-modal .ant-modal-content {
+    background-color: #E1F1E4;
 }

@@ -1,26 +1,38 @@
-import React, { Suspense, useState } from 'react';
-import { Link } from "react-router-dom";
+import React, { Suspense, useEffect, useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import { Spin } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
-import Header from '../header/Header';
 
-import Input from '../Input/Input';
+import Header from '../organisms/components/Header';
+import Navbar from '../organisms/components/Navbar';
+
+
 export type PropsLayout = {
-children: React.ReactNode;
+    children: React.ReactNode;
 };
 const LayoutPage = ({ children }: any) => {
-const antIcon =
-<LoadingOutlined style={{ fontSize: 100 }} spin />;
+    const Navigate = useNavigate()
+    useEffect(() => {
+        const tokenString = localStorage.getItem("token");
+        if (tokenString == "" || tokenString == null) {
+            Navigate("/login");
+        }
 
-return (
-<div>
-    <Header/>
-    <div>
-        <Suspense fallback={<Spin size="large" className='w-full h-[80vh] flex items-center justify-center  ' />} >
-        {children}
-        </Suspense>
-    </div>
-</div>
-)
+    }, [])
+
+    return (
+        <div>
+            <Header />
+            <div className='flex  mt-10 '>
+                <div className=' p-[16px]  '>
+                    <Navbar />
+                </div>
+                <div className='px-[70px]  w-full'>
+                    <Suspense fallback={<Spin size="large" className='w-full h-[80vh] flex items-center justify-center  ' />} >
+                        {children}
+                    </Suspense>
+                </div>
+            </div>
+        </div>
+    )
 }
 export default LayoutPage

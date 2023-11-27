@@ -1,31 +1,39 @@
 import React, { lazy } from 'react'
-const Home = React.lazy(() => import('../components/organisms/home/Home'))
-const profile = React.lazy(() => import('../components/organisms/Profile/Profile'))
-const searchResults = React.lazy(() => import('../components/organisms/searchResults/SearchResults'))
-const routePortals = {
-    HOME: '/',
-    PROFILE: 'profile',
-    SEARCHRESULTS: "searchResults",
+const DeviceManage = React.lazy(() => import('../components/organisms/pages/DeviceManage'))
+const UserManage = React.lazy(() => import('../components/organisms/pages/UserManage'))
+const LogDevice = React.lazy(() => import('../components/organisms/pages/LogDevice'))
+const SettingDevice = React.lazy(() => import('../components/organisms/pages/SettingDevice'))
+export const routePortals = {
+    DEVICEMANAGE: '/',
+    USERMANAGE: "/user-manage",
+    LOGDEVICE: "/log-device",
+    SETTINGDEVICE: "/setting-device"
+
 
 }
 export const routePortal = [
     {
         id: 1,
-        route: routePortals.HOME,
-        component: Home,
+        route: routePortals.DEVICEMANAGE,
+        component: DeviceManage,
         permission: 'dashboard'
     },
     {
         id: 2,
-        route: routePortals.PROFILE,
-        component: profile,
+        route: routePortals.USERMANAGE,
+        component: UserManage,
         permission: 'dashboard'
-    }
-    ,
+    },
     {
         id: 3,
-        route: routePortals.SEARCHRESULTS,
-        component: searchResults,
+        route: routePortals.LOGDEVICE,
+        component: LogDevice,
         permission: 'dashboard'
-    }
+    },
+    {
+        id: 4,
+        route: routePortals.SETTINGDEVICE,
+        component: SettingDevice,
+        permission: 'dashboard'
+    },
 ]
