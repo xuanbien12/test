@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .ant-modal .ant-modal-content {
-    background-color: #E1F1E4;
+    background-color: #F5FCFF;
 }
 
 .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
@@ -22,6 +22,7 @@
 
 * {
     font-size: 16px;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .ant-btn {
@@ -105,6 +106,140 @@ input[type=number] {
     gap: 20px;
 }
 
-.ant-modal .ant-modal-content {
-    background-color: #E1F1E4;
+.container {
+    max-width: 90% !important;
+    margin: 0 auto;
+
+}
+
+@media(min-width : 1000px) {
+    .container {
+        max-width: 1200px !important;
+        margin: 0 auto;
+
+    }
+}
+
+@media(min-width : 1200px) {
+    .container {
+        max-width: 1240px !important;
+        margin: 0 auto;
+
+    }
+}
+
+@media(min-width : 1440px) {
+    .container {
+        max-width: 1440px !important;
+        margin: 0 auto;
+
+    }
+}
+
+
+
+
+.login-hover {
+    display: none;
+}
+
+.btn-login:hover .login-hover {
+    display: block;
+}
+
+.btn-login:hover .login {
+    display: none;
+}
+
+input::placeholder {
+    color: #A3A3A3 !important;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ant-input-affix-wrapper {
+    border: 1px solid #0D72BB !important
+}
+
+.capcha .ant-input:focus {
+    border: none !important;
+    box-shadow: none
+}
+
+
+
+.capcha .ant-input {
+    background: transparent !important;
+    padding: 0;
+}
+
+.input-number .ant-input {
+    border: 1px solid #0D72BB !important
+}
+
+h3 {
+    color: #0D72BB;
+    font-size: 20px;
+}
+
+@media(max-width:640px) {
+    h3 {
+        color: #0D72BB;
+        font-size: 16px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+}
+
+.select-month .ant-select-selector {
+    border: none !important;
+    border-bottom: 1px solid #0D72BB !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.select-month .ant-select-open {
+    border: none !important;
+}
+
+.select-month .ant-select-open {
+    border: none !important;
+}
+
+.select-month .ant-select-selector {
+    box-shadow: none !important;
+}
+
+
+.search-nv .ant-select-selector {
+    border: 1px solid #0D72BB !important;
+}
+
+.ant-radio-wrapper .ant-radio-inner {
+    width: 18px;
+    height: 18px;
+}
+
+.ant-radio-wrapper .ant-radio-inner {
+    border: 1px solid #ABABAB !important;
+}
+
+.ant-btn-default {
+    border: none !important;
 }

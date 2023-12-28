@@ -21,7 +21,7 @@ const LayoutPage = ({ children }: any) => {
     return (
         <div>
             <Header />
-            <div className='flex  mt-10 '>
+            <div className=' pt-5 lg:pt-10 bg-[#fff] lg:bg-[#F0F8FF] '>
 
                 <Suspense fallback={<Spin size="large" className='w-full h-[80vh] flex items-center justify-center  ' />} >
                     {children}
