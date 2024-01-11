@@ -8,12 +8,13 @@ import {
 import { Spin, ConfigProvider } from 'antd';
 import { routePortal } from '../routes/PortalRoute';
 import LayoutPage from '../components/layout/LayoutPage';
+import { routePortalAdmin } from '../routes/PortalRouteAdmin';
 
-
+export const role: number = 2
 function App() {
 
   return (
-    <div className="App bg-[#f0f2f5] min-h-[100vh]  ">
+    <div className="App bg-[#f0f2f5]   ">
       <Suspense fallback={<Spin className='w-full h-[80vh] flex items-center justify-center ' size="large" />} >
 
 
@@ -31,6 +32,17 @@ function App() {
               {
 
                 routePortal.map(route => (
+                  <Route key={route.id} path={route.route} element={<route.component />}
+                  >
+
+                  </Route>
+
+                ))
+              }
+              {
+                role === 2
+                &&
+                routePortalAdmin.map(route => (
                   <Route key={route.id} path={route.route} element={<route.component />}
                   >
 

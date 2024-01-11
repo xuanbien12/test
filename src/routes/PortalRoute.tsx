@@ -1,9 +1,10 @@
 import React, { lazy } from 'react'
 const cardRegistration = React.lazy(() => import('../components/organisms/pages/Home'))
-const giahanthexe = React.lazy(() => import('../components/organisms/pages/gia_han_the_xe'))
+const giahanthexe = React.lazy(() => import('../components/organisms/pages/Gia_han_the_xe'))
 export const routePortals = {
     HOME: '/',
-    GIA_HAN_THE_XE: "/gia-han-the-xe"
+    GIA_HAN_THE_XE: "/gia-han-the-xe",
+    DEFAULT: "*"
 
 
 
@@ -15,8 +16,14 @@ export const routePortal = [
         component: cardRegistration,
     },
     {
-        id: 1,
+        id: 2,
         route: routePortals.GIA_HAN_THE_XE,
         component: giahanthexe,
+    }
+    ,
+    {
+        id: 3,
+        route: routePortals.DEFAULT,
+        component: cardRegistration,
     }
 ]

@@ -132,6 +132,7 @@ const VehicleCardRenewal = () => {
                                             suffixIcon={
                                                 <img src={iconSelect} alt=""></img>
                                             }
+                                            popupClassName="select-month-dropdown"
                                             style={{ width: '180px' }}
                                             onChange={handleChange}
                                             options={[

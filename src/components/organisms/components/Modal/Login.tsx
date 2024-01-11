@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Button, Modal, Form, Input } from 'antd';
 import { generateRandomString } from "../../../../configs/common";
+import { useNavigate } from "react-router-dom";
+import { routePortalsAdmin } from "../../../../routes/PortalRouteAdmin";
 
 const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
     const [form] = Form.useForm();
     const [randomCapcha, setRandomCapcha] = useState("")
     const [captchaError, setCaptchaError] = useState(false);
+    const navigate = useNavigate()
     const onFinish = async (value: any) => {
         console.log("value", value)
         if (value.captcha === randomCapcha) {
@@ -13,7 +16,8 @@ const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
         } else {
             setCaptchaError(true)
         }
-
+        navigate(routePortalsAdmin.QUAN_LY_THE_XE)
+        setOpenModalLogin(false)
     }
 
     console.log("captchaError", captchaError)

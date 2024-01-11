@@ -10,20 +10,19 @@ export type PropsLayout = {
 };
 const LayoutPage = ({ children }: any) => {
     const Navigate = useNavigate()
-    useEffect(() => {
-        const tokenString = localStorage.getItem("token");
-        if (tokenString == "" || tokenString == null) {
-            Navigate("/login");
-        }
+    // useEffect(() => {
+    //     const tokenString = localStorage.getItem("token");
+    //     if (tokenString == "" || tokenString == null) {
+    //         Navigate("/login");
+    //     }
 
-    }, [])
+    // }, [])
 
     return (
-        <div>
+        <div className='min-h-[100vh]'>
             <Header />
-            <div className=' pt-5 lg:pt-10 bg-[#fff] lg:bg-[#F0F8FF] '>
-
-                <Suspense fallback={<Spin size="large" className='w-full h-[80vh] flex items-center justify-center  ' />} >
+            <div className=' min-h-[95.5vh] py-3 lg:py-6 bg-[#fff] lg:bg-[#F0F8FF] '>
+                <Suspense fallback={<Spin size="large" className='w-full min-h-[80vh] flex items-center justify-center  ' />} >
                     {children}
                 </Suspense>
 
