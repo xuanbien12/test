@@ -17,7 +17,7 @@ const ModalUser = ({ openModalUser, setOpenModalUser }: any) => {
             onCancel={() => setOpenModalUser(false)}
             width={656}
             footer={false}
-            className="modal_Excel"
+            className="modal_Excel customer-label-modal"
             title={<div className="text-[30px] font-medium pl-5 ">Tạo mới người dùng</div>}
         >
             <div className="p-5">

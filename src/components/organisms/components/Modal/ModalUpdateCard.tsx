@@ -50,6 +50,7 @@ const ModalUpdateCard = ({ openModalUpdateCard, setOpenModalUpdateCard }: any) =
             onCancel={() => setOpenModalUpdateCard(false)}
             width={656}
             footer={false}
+            className="customer-label-modal"
             title={< div className="text-[30px] font-medium pl-5 " > Thông tin thẻ</ div>}
         >
             <div className="p-5">
