@@ -1,6 +1,7 @@
 export const TOKEN = "token"
 export const PHONE = "phoneNumber"
-
+export const ROLE = "role"
+export const role = localStorage.getItem(ROLE) || "1"
 
 
 

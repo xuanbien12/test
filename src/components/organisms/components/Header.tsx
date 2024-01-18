@@ -11,11 +11,13 @@ import { Link, useLocation } from "react-router-dom";
 import { routePortals } from "../../../routes/PortalRoute";
 import { Button, Drawer, Dropdown } from 'antd';
 import Login from "./Modal/Login";
-import { role } from "../../../App/App";
+
 import { getCurrentDateTime } from "../../../configs/common";
 import { routePortalsAdmin } from "../../../routes/PortalRouteAdmin";
 import Auth from "./Auth";
 import Time from "./Time";
+import { role } from "../../../configs/localStorage";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     const [openModalLogin, setOpenModalLogin] = useState(false)
@@ -87,13 +89,11 @@ const Header = () => {
             ),
         }
     ];
-
-
     return (
-        <header className="   ">
+        <header className=" ">
 
             {
-                role === 2
+                +role === 2
                     ?
                     <div className="bg-[#0D72BB]">
                         <div className="container">

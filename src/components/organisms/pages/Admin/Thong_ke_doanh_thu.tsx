@@ -12,8 +12,7 @@ const Thong_ke_doanh_thu = () => {
     const { confirm } = Modal;
     const [data, setData] = useState<any>([])
     const [loading, setLoading] = useState(false)
-    const [page, setPage] = useState(1)
-    const [size, setSize] = useState(15)
+
     const [totalElement, setTotalElement] = useState<number>()
     const [startTime, setStartTime] = useState<any>()
 

@@ -4,6 +4,7 @@ const quanLyNguoiDung = React.lazy(() => import('../components/organisms/pages/A
 const dangKyGiaHan = React.lazy(() => import('../components/organisms/pages/Admin/Dang_ky_gia_han'))
 const quanLyThanhToan = React.lazy(() => import('../components/organisms/pages/Admin/Quan_ly_thanh_toan'))
 const thongKeDoanhThu = React.lazy(() => import('../components/organisms/pages/Admin/Thong_ke_doanh_thu'))
+const cauHinhThanhToan = React.lazy(() => import('../components/organisms/pages/Admin/Cau_hinh_thanh_Toan'))
 export const routePortalsAdmin = {
     QUAN_LY_THE_XE: '/quan-ly-the-xe',
     QUAN_LY_NGUOI_DUNG: "/quan-ly-nguoi-dung",
@@ -38,5 +39,10 @@ export const routePortalAdmin = [
         id: 14,
         route: routePortalsAdmin.THONG_KE_DOANH_THU,
         component: thongKeDoanhThu,
+    },
+    {
+        id: 14,
+        route: routePortalsAdmin.CAU_HINH_THANH_TOAN,
+        component: cauHinhThanhToan,
     },
 ]

@@ -15,7 +15,7 @@ const Quan_ly_thanh_toan = () => {
     const [data, setData] = useState<any>([])
     const [loading, setLoading] = useState(false)
     const [page, setPage] = useState(1)
-    const [size, setSize] = useState(15)
+    const [size, setSize] = useState(13)
     const [totalElement, setTotalElement] = useState<number>()
     const [detailPayment, setDetailPayment] = useState({})
     const [isDetailPayment, setIsDetailPayment] = useState(false)

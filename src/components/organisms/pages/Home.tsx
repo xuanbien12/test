@@ -10,7 +10,7 @@ const Home = () => {
     const [captchaError, setCaptchaError] = useState(false);
     const onFinish = async (value: any) => {
         console.log("value", value)
-        if (value.captcha === randomCapcha) {
+        if (value.Captcha === randomCapcha) {
             setCaptchaError(false)
         } else {
             setCaptchaError(true)

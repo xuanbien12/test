@@ -73,8 +73,8 @@ const ModalUser = ({ openModalUser, setOpenModalUser }: any) => {
 
                         </Form.Item>
                     </div>
-                    <div className="flex gap-3 items-center ">
-                        <div className="font-bold">
+                    <div className="flex gap-3 items-center mt-2 ">
+                        <div className="font-bold mb-5">
 
                             Nhóm người dùng :
                         </div>

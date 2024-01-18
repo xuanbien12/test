@@ -5,6 +5,7 @@ import logout from "./../../../assets/icon/logout.svg"
 import changePassword from "./../../../assets/icon/changePassword.svg"
 import logoutHover from "./../../../assets/icon/logoutHover.svg"
 import changePasswordHover from "./../../../assets/icon/changePasswordHover.svg"
+import { setRole } from "../../../redux/slice/reduxGlobal";
 const Auth = () => {
     const items = [
 
@@ -21,7 +22,10 @@ const Auth = () => {
         {
             key: '10',
             label: (
-                <div className=" logout flex gap-2 text-[20px] hover:text-[#72BB0D] py-1 ">
+                <div onClick={() => {
+                    localStorage.clear()
+                    window.location.reload()
+                }} className=" logout flex gap-2 text-[20px] hover:text-[#72BB0D] py-1 ">
                     <img className="logout-icon" src={logout} alt="" />
                     <img className="logout-icon-hover" src={logoutHover} alt="" />
                     <span>Đăng xuất</span>

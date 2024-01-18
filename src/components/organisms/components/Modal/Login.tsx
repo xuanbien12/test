@@ -3,6 +3,8 @@ import { Button, Modal, Form, Input } from 'antd';
 import { generateRandomString } from "../../../../configs/common";
 import { useNavigate } from "react-router-dom";
 import { routePortalsAdmin } from "../../../../routes/PortalRouteAdmin";
+import { ROLE, TOKEN } from "../../../../configs/localStorage";
+import { setRole } from "../../../../redux/slice/reduxGlobal";
 
 const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
     const [form] = Form.useForm();
@@ -11,16 +13,20 @@ const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
     const navigate = useNavigate()
     const onFinish = async (value: any) => {
         console.log("value", value)
-        if (value.captcha === randomCapcha) {
+        console.log("=====", value.Captcha === randomCapcha)
+        if (value.Captcha === randomCapcha) {
             setCaptchaError(false)
+            navigate(routePortalsAdmin.QUAN_LY_THE_XE)
+            setOpenModalLogin(false)
+            localStorage.setItem(ROLE, "2")
+            localStorage.setItem(TOKEN, "abc")
+            form.resetFields()
+            window.location.reload()
         } else {
             setCaptchaError(true)
         }
-        navigate(routePortalsAdmin.QUAN_LY_THE_XE)
-        setOpenModalLogin(false)
-    }
 
-    console.log("captchaError", captchaError)
+    }
     useEffect(() => {
         setRandomCapcha(generateRandomString())
     }, [])
@@ -40,7 +46,7 @@ const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
             <h2 className="mb-2">Đăng nhập</h2>
             <Form
                 form={form}
-                name="basic"
+
                 onFinish={onFinish}
                 layout="vertical"
             >
@@ -73,7 +79,7 @@ const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
                             <div
                                 className="text-[16px] w-full capcha border-b border-[#0D72BB] "
                             >
-                                <Input className="h-[35px] border-none text-[#646464]  " placeholder="Nhập kí tự " />
+                                <Input onChange={() => setCaptchaError(false)} className="h-[35px] border-none text-[#646464]  " placeholder="Nhập kí tự " />
 
 
 

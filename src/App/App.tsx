@@ -9,10 +9,11 @@ import { Spin, ConfigProvider } from 'antd';
 import { routePortal } from '../routes/PortalRoute';
 import LayoutPage from '../components/layout/LayoutPage';
 import { routePortalAdmin } from '../routes/PortalRouteAdmin';
+import { role } from '../configs/localStorage';
+import { useSelector } from 'react-redux';
 
-export const role: number = 2
 function App() {
-
+  const roleA = useSelector((state: any) => state.global.role) || +role
   return (
     <div className="App bg-[#f0f2f5]   ">
       <Suspense fallback={<Spin className='w-full h-[80vh] flex items-center justify-center ' size="large" />} >
@@ -40,7 +41,7 @@ function App() {
                 ))
               }
               {
-                role === 2
+                +roleA === 2
                 &&
                 routePortalAdmin.map(route => (
                   <Route key={route.id} path={route.route} element={<route.component />}
