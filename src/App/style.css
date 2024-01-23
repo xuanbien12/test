@@ -340,8 +340,8 @@ h3 {
     border: 1px solid #0D72BB;
 }
 
-.modal_login.ant-input-affix-wrapper {
-    border: 1px solid #0D72BB
+.modal_login .ant-input-affix-wrapper {
+    border: 1px solid #0D72BB !important
 }
 
 .modal_login .ant-input-affix-wrapper>input.ant-input {
@@ -350,8 +350,8 @@ h3 {
     padding-left: 11px;
 }
 
-.modal_login.ant-input-affix-wrapper>.ant-input-suffix {
-    background-color: #E7F3F3;
+.modal_login .ant-input-affix-wrapper>.ant-input-suffix {
+    background-color: #E7F3F3 !important;
     margin-inline-start: 0px;
     padding: 0 11px;
     border-top-right-radius: 6px;

@@ -9,7 +9,7 @@ import { Spin, ConfigProvider } from 'antd';
 import { routePortal } from '../routes/PortalRoute';
 import LayoutPage from '../components/layout/LayoutPage';
 import { routePortalAdmin } from '../routes/PortalRouteAdmin';
-import { role } from '../configs/localStorage';
+import { role, token } from '../configs/localStorage';
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -31,7 +31,8 @@ function App() {
             <Route path='/'>
 
               {
-
+                token
+                &&
                 routePortal.map(route => (
                   <Route key={route.id} path={route.route} element={<route.component />}
                   >
