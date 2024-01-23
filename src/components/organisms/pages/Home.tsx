@@ -3,6 +3,9 @@ import banner from "./../../../assets/img/home.png"
 import React, { useEffect, useState } from "react";
 import { Button, Modal, Form, Input } from 'antd';
 import { generateRandomString } from "../../../configs/common";
+import { token } from "../../../configs/localStorage";
+import { useNavigate } from "react-router-dom";
+import { routePortalsAdmin } from "../../../routes/PortalRouteAdmin";
 
 const Home = () => {
     const [form] = Form.useForm();
@@ -17,7 +20,12 @@ const Home = () => {
         }
 
     }
-
+    const navigate = useNavigate()
+    useEffect(() => {
+        if (token) {
+            navigate(routePortalsAdmin.QUAN_LY_THE_XE)
+        }
+    }, [])
     console.log("captchaError", captchaError)
     useEffect(() => {
         setRandomCapcha(generateRandomString())

@@ -9,6 +9,9 @@ import tienmat from "./../../../assets/img/tienmat.png"
 import warning from "./../../../assets/img/warning.png"
 import qr from "./../../../assets/img/qr.png"
 import copy from 'clipboard-copy';
+import { token } from "../../../configs/localStorage";
+import { useNavigate } from "react-router-dom";
+import { routePortalAdmin, routePortalsAdmin } from "../../../routes/PortalRouteAdmin";
 const VehicleCardRenewal = () => {
 
     const [valueSearch, setValueSearch] = useState<any>();
@@ -16,6 +19,7 @@ const VehicleCardRenewal = () => {
     const [dataSearch, setDataSearch] = useState<any>([]);
     const [debouncedValue, setDebouncedValue] = useState<string>('');
     const [valueRadio, setValueRadio] = useState(1)
+    const navigate = useNavigate()
     const handleSearch = (newValue: string) => {
         console.log("newValue", newValue)
         setValueSearch(newValue);
@@ -47,6 +51,11 @@ const VehicleCardRenewal = () => {
         copy(value);
         message.success("Sao chép thành công")
     };
+    useEffect(() => {
+        if (token) {
+            navigate(routePortalsAdmin.QUAN_LY_THE_XE)
+        }
+    }, [])
     return (
         <div className="">
             <div className="container">

@@ -31,8 +31,7 @@ function App() {
             <Route path='/'>
 
               {
-                token
-                &&
+
                 routePortal.map(route => (
                   <Route key={route.id} path={route.route} element={<route.component />}
                   >

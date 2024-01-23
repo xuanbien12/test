@@ -22,6 +22,8 @@ const Login = ({ openModalLogin, setOpenModalLogin }: any) => {
             localStorage.setItem(TOKEN, "abc")
             form.resetFields()
             window.location.reload()
+            navigate("/")
+
         } else {
             setCaptchaError(true)
         }
